@@ -1,0 +1,29 @@
+// https://ionicframework.com/docs/theming/color-generator
+
+.pink-toes {
+    --ion-color-primary:  #ff00b4;
+    --ion-color-primary-rgb: 148,33,146;
+    --ion-color-primary-contrast: #ffffff;
+    --ion-color-primary-contrast-rgb: 255,255,255;
+    --ion-color-primary-shade: #9b0068;
+    --ion-color-primary-tint: #cc0099;
+  
+    --ion-color-secondary: #33cc47;
+    --ion-color-secondary-rgb: 227,146,254;
+    --ion-color-secondary-contrast: #000000;
+    --ion-color-secondary-contrast-rgb: 0,0,0;
+    --ion-color-secondary-shade: #61cf67;
+    --ion-color-secondary-tint: #30a740;
+  
+    --ion-color-tertiary: #a10a8d;
+    --ion-color-tertiary-rgb: 154,36,79;
+    --ion-color-tertiary-contrast: #ffffff;
+    --ion-color-tertiary-contrast-rgb: 255,255,255;
+    --ion-color-tertiary-shade: #79163a;
+    --ion-color-tertiary-tint: #b1496f;
+  }
+
+  .dark-pink-toes {
+      @extend .dark-theme;
+      @extend .pink-toes;
+  }

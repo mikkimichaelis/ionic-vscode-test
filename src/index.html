@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="color-scheme" content="dark" />
+    <meta charset="utf-8" />
+    <link rel="alternate" href="android-app://live.aana.live/https/live.aana.app" />
+    <link rel="alternate" href="android-app://live.aana.app/https/meetingmaker.us.auth0.com/login/callback" />
+
+    <title>AA/NA Live!</title>
+
+    <base href="/" />
+
+    <meta name="color-scheme" content="dark" />
+    <meta name="viewport"
+        content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+
+    <link rel="icon" type="image/png" href="assets/icon/favicon.png" />
+
+    <!-- add to homescreen for ios -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css"
+        rel="stylesheet" />
+
+    <script>
+        function randomString(length, chars) {
+            var result = '';
+            for (var i = length; i > 0; --i) result += chars[Math.floor(Math.random() * chars.length)];
+            return result;
+        }
+        window.sessionId = randomString(1, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') + randomString(2, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') + randomString(2, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ');
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@editorjs/editorjs@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/codex.editor.header@2.0.4/dist/bundle.js"></script>
+</head>
+
+<body>
+    <app-root></app-root>
+</body>
+</html>

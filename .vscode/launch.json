@@ -1,0 +1,63 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Attach to Safari",
+      "port": 9222,
+      "request": "attach",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      "name": "Attach to running iOS on device",
+      "type": "cordova",
+      "request": "attach",
+      "platform": "ios",
+      "target": "device",
+      "port": 9220,
+      "sourceMaps": true,
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "name": "Attach to running iOS on simulator",
+      "type": "cordova",
+      "request": "attach",
+      "platform": "ios",
+      "target": "86F40F13-C7C5-4B4A-AAF8-543111FBEAB5",
+      "port": 9000,
+      "sourceMaps": true,
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "name": "Attach to running Android on device",
+      "type": "cordova",
+      "request": "attach",
+      "platform": "android",
+      "target": "device",
+      "port": 9222,
+      "sourceMaps": true,
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "name": "Attach to running Android on emulator",
+      "type": "cordova",
+      "request": "attach",
+      "platform": "android",
+      "target": "My_Pixel_3_API_28",
+      "port": 9222,
+      "sourceMaps": true,
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "type": "chrome",
+      "request": "launch",
+      "outFiles": [
+        "${workspaceFolder}/**/*.js",
+        "www/**/*.js",
+        "!**/node_modules/**"
+      ],
+      "name": "Launch Chrome against localhost",
+      "url": "https://localhost:8100",
+      "webRoot": "${workspaceFolder}"
+    }
+  ]
+}
