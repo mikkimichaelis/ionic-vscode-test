@@ -10,6 +10,8 @@ export class TestPage implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    debugger;
+    alert('here')
   }
 
 }
